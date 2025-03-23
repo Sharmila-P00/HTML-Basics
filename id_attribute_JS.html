@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Dtate Attribute</title>
+	<script type="text/javascript">
+		function viewdate() {
+			var x = document.getElementById("dob").value;
+			document.getElementById("demo").innerHTML = x;
+		}
+	</script>
+</head>
+<body>
+	Employee Name : <input type="text" placeholder="your good name"><br>
+	<label>Date of Joining: </label><br>
+	<input type="date" name="date of joining" id="dob"><br>
+	<button onclick="viewdate()"> Submit</button><br>
+	<h2 id="demo"></h2>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>get elements by class name method</title>
+	<style type="text/css">
+		.fruit{
+			background-color: orangered;
+			color: white;
+			padding: 30px;
+		}
+		.center{
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+	<h2>Class attribute with Jvascript</h2>
+	<p>Click the button, to hide all elements with class name "fruit", with javascript:</p>
+	<button onclick="myfunction()">Hide elements</button>
+
+	<h2 class="fruit center">Mango</h2>
+	<p class="fruit">mango is king of all fruits</p>
+
+	<h2 class="fruit">Orange</h2>
+	<p>Oranges are full of vitamin C</p>
+
+	<h2 class="fruit">Apple</h2>
+	<p>An apple a day, keeps a doctor away</p>
+
+	<script type="text/javascript">
+	function myfunction() {
+		var x = document.getElementsByClassName('fruit');
+		for (var i = 0; i < x.length; i++) {
+			x[i].style.display = "none";
+		}
+	}
+	</script>
+</body>
+</html>

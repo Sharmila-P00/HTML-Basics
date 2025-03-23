@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>CSS_margin_shorthand</title>
+	<style type="text/css">
+		p{
+			background-color: hotpink;
+		}
+		p.ex{
+			/*0margin: 50px 100px 150px 200px; top,right,bottom,left*/
+			/*margin: 50px 100px 150px; top, left & right, bottom*/
+			margin: 50px 150px; /* top & bottom, left & right */
+		}
+	</style>
+</head>
+<body>
+	<p>This is paragraph not diaplayed with spacified margin</p>
+	<p class="ex">this paragraph is displayed with the specified margin</p>
+</body>
+</html>
